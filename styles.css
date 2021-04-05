@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#canvas {
+  /* background: radial-gradient(
+      circle at center,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("./leaves.jpg") center/cover no-repeat; */
+}
+
+.text-moving-bkg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.textWrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2.5rem;
+  transition: all 0.5s;
+}
+
+.textWrapper1 {
+  right: 0vw;
+}
+
+.textWrapper2 {
+  right: -100vw;
+}
+.textWrapper3 {
+  right: -200vw;
+}
+.textWrapper4 {
+  right: -300vw;
+}
+
+.textCon {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+  mix-blend-mode: exclusion;
+  font-size: 25px;
+  width: 75%;
+  max-width: 600px;
+  margin-bottom: 50px;
+  margin-left: 10%;
+  margin-top: 80px;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
+  transition: all 0.5s;
+}
+
+.textCon > h1 {
+  font-family: "Londrina Outline", cursive;
+  letter-spacing: 10px;
+  font-size: 60px;
+  margin-bottom: 100px;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.8);
+}
+
+.textCon2 {
+  text-align: center;
+  width: 50%;
+  max-width: 500px;
+  line-height: 1.5;
+  font-size: 22px;
+  color: #fff;
+  mix-blend-mode: exclusion;
+  margin-right: 20%;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
+
+  transition: all 0.5s;
+}
+
+.textCon2 h3 {
+  font-family: "Londrina Outline", cursive;
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+.reference {
+  position: absolute;
+  color: #000;
+  bottom: 4%;
+}
+
+.change {
+  color: #fff;
+  right: 5%;
+  top: 60%;
+  mix-blend-mode: difference;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.navCon {
+  color: #000;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  background: #fff;
+}
+
+.navBar {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 15px 0;
+}
+
+.iconAndName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.iconAndName p {
+  color: #000;
+  font-size: 25px;
+  font-family: "Courgette", cursive;
+}
+
+.navBar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navBar ul li {
+  margin-right: 25px;
+  font-size: 25px;
+}
+
+.fa-instagram {
+  color: #cd201f;
+}
+
+.fa-facebook-square {
+  color: #3b5999;
+}
+
+.fa-twitter-square {
+  color: #55acee;
+}
+
+.fa-youtube-square {
+  color: #dd4b39;
+}
+
+.nature-icon {
+  margin-right: 10px;
+}
